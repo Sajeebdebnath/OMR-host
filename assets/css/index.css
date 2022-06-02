@@ -1,101 +1,23 @@
 /*!
- * Name : Sajeeb Debnath Portfolio
+ * Name : OMR Host
  * Version: 1.0.0
- * Author: Team CodeDamn
+ * Author: Sajeeb Debnath
  * Author URL: fb.me/sajeebdebnath.cse
  * Github: https://github.com/sajeebdebnath
  * Sajeeb Debnath 
 
  * Table of Contents:
-    A. Home
+    1. Home
         01. Header Section
         02. Hero Section
         10. Footer Section
-	B. Blog
-		01. Intro Section
-		02. Story Section
-	C. Contact Us
 */
 
 /* ------------------------- Home Start --------------------- */
 /* ------------------------- Header Section CSS Start --------------------- */
-.header-top-area {
-  background: #000;
-  user-select: none;
-  padding: 15px 0px;
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  top: 0;
-  z-index: 99;
-  display: flex;
-  align-items: center;
-}
-.header-top-area.active {
-  background: #ffffff;
-  box-shadow: 0 2px rgb(238, 238, 238);
-}
-.header-top-area .logo {
-  display: flex;
-  gap: 8px;
-}
-.header-top-area .logo img {
-  -webkit-user-drag: none;
-}
-.header-top-area .logo object {
-  height: 30px;
-}
-.menu-area {
-  text-align: right;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  transition: all 0.3s ease-in-out;
-}
-.menu-area nav {
-  display: inline-block;
-}
-.menu-area nav ul {
-  display: flex;
-}
-.menu-area nav ul li {
-  padding: 0px 15px;
-}
-.menu-area nav ul li a {
-  font-size: var(--smallFont);
-  text-decoration: none;
-  color: var(--bgColor3);
-}
-.menu-area nav ul li a:hover {
-  color: #16395f;
-}
-.menu-area nav ul li .active {
-  color: #16395f;
-}
-.navigation {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.navigation .menu-area {
-  margin-left: auto;
-}
 
 /* ------------------------- Header Section CSS End --------------------- */
 
 /* -------------------------Hero Section CSS Start --------------------- */
-.hero-area {
-  margin-top: -70px;
-  background: url(../assets/svgs/hero-bg.svg);
-  background-repeat: no-repeat;
-  background-color: #c9f0f2;
-  height: 100vh;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 /* -------------------------Hero Section CSS End --------------------- */

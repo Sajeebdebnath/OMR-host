@@ -151,38 +151,50 @@ html::-webkit-scrollbar-track {
 
 /* Common CSS */
 
-/* Google Fonts (Poppins) */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap");
+@font-face {
+  font-family: "Droid Serif ";
+  src: url(../fonts/DroidSerif-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  src: url(../fonts/DroidSerif-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Google Fonts (Roboto & Arimo) */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* Variable List */
 :root {
-  --bgColor: #1c1c1c;
-  --bgColor2: #74cfe4;
-  --bgColor3: #cbcbcb;
-  --bgColor4: #2b313f;
-  --bgColor5: #2d4355;
-  --sectionBg: #f3f3f3;
-  --largFont: 40px;
+  --bgColor: #119ee6;
+  --bgColor2: #f9f9f9;
+  --bgColor3: #151414;
+  --sectionBg: #f9f9f9;
   --mediumFont: 24px;
-  --normalFont: 18px;
-  --smallFont: 14px;
-  --textColor: #748182;
-  --textColor2: #eee;
-  --fontFamily: "Poppins", sans-serif;
-  --fontFamily2: "Montserrat", sans-serif;
-  --sectionPadding: 60px 0px;
+  --normalFont: 14px;
+  --textColor: #222222;
+  --textColor2: #555555;
+  --textColor3: #aaaaaa;
+  --fontFamily: "Droid Serif";
+  --fontFamily2: "Roboto", sans-serif;
+  --fontFamily3: "Arimo", sans-serif;
+  --sectionPadding: 100px 0px;
 }
 
 body {
   font-size: var(--normalFont);
-  color: var(--textColor2);
-  font-family: var(--fontFamily);
+  color: var(--textColor);
+  font-family: var(--fontFamily2);
   font-weight: regular;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--fontFamily2);
+  font-family: var(--fontFamily);
   color: var(--textColor);
   font-weight: semi-bold;
   margin: 0;
@@ -200,11 +212,7 @@ a {
   text-decoration: none;
   color: var(--textColor);
 }
-abbr[title] {
-  border-bottom: none !important;
-  cursor: inherit !important;
-  text-decoration: none !important;
-}
+
 .btn {
   text-decoration: none;
   font-size: var(--smallFont);
@@ -221,46 +229,9 @@ abbr[title] {
   background: #358fb2;
   border: none;
 }
-.btn-warn {
-  background: #f9ca70;
-  border: none;
+.btn-link {
+  background-color: transparent;
 }
-.btn-positive {
-  background: #96bea4;
-  border: none;
-}
-.btn-negative {
-  background: #ee4d6e;
-  border: none;
-}
-.btn-alt {
-  background: #dcdcdc;
-  color: #464646;
-  border: 1px solid #c0c0c0;
-}
-.btn-main:hover {
-  color: #f5f5f5;
-  background: #17789d;
-  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.2);
-  animation: flash 1.5s infinite;
-}
-.btn-alt:hover {
-  background: #cacaca;
-  color: #3a3a3a;
-}
-.btn-warn:hover {
-  background: #e2b665;
-  border: none;
-}
-.btn-positive:hover {
-  background: #7ea78c;
-  border: none;
-}
-.btn-negative:hover {
-  background: #cc435e;
-  border: none;
-}
-
 .btn:active {
   color: #e9e9e9;
   background: #005779;
@@ -268,43 +239,4 @@ abbr[title] {
 }
 .section-padding {
   padding: var(--sectionPadding);
-}
-
-.section-bg {
-  background-color: var(--sectionBg);
-}
-.section-title {
-  display: inline-block;
-  position: relative;
-}
-
-.section-title h3 {
-  font-size: var(--normalFont);
-  color: var(--textColor);
-  font-weight: 600;
-}
-
-.section-title::after {
-  position: absolute;
-  content: "";
-  background-color: var(--bgColor);
-  width: 100%;
-  height: 2px;
-}
-
-.link-title {
-  display: block;
-  text-align: right;
-}
-
-.link-title a {
-  font-size: var(--normalFont);
-  color: var(--textColor);
-  font-weight: 600;
-  text-decoration: none;
-}
-.center-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
