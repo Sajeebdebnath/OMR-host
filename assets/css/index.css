@@ -15,6 +15,65 @@
 
 /* ------------------------- Home Start --------------------- */
 /* ------------------------- Header Section CSS Start --------------------- */
+.header-top-area {
+  background-color: var(--bgColor3);
+  color: var(--textColor3);
+  padding: 20px 0;
+}
+
+.header-top-area a {
+  color: var(--textColor3);
+  transition: 0.3s;
+}
+
+.header-top-area a:hover {
+  color: var(--bgColor);
+}
+
+.header-top-area .header-social-link {
+  display: flex;
+  gap: 20px;
+}
+
+.header-top-area .header-social-link .links {
+  display: flex;
+  gap: 15px;
+}
+
+.header-top-area .header-contact {
+  display: flex;
+  justify-content: end;
+}
+
+.header-top-area .header-contact .contact-links a {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.header-top-area .header-contact .contact-links a:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.header-top-area .header-contact .contact-links a:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 150%;
+  background-color: rgb(51, 51, 51);
+  right: 0;
+}
+
+.header-top-area .header-contact .contact-links a:last-child:after {
+  width: 0;
+}
+
+.header-top-area .header-contact .contact-links a span {
+  padding-left: 7px;
+}
 
 /* ------------------------- Header Section CSS End --------------------- */
 
