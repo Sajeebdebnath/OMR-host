@@ -629,3 +629,55 @@
   height: 0;
 }
 /* -------------------------omrHost Overview Section CSS End --------------------- */
+
+/* -------------------------Why Choose Us Section CSS Start --------------------- */
+.single-choosing-reason-item {
+  background: var(--bgColor);
+  padding: 0 30px;
+  height: 285px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 5px;
+  color: white;
+}
+
+.single-choosing-reason-item.right {
+  height: 580px;
+  text-align: right;
+}
+
+.single-choosing-reason-item .reason-number {
+  position: absolute;
+  font-size: 78px;
+  font-family: var(--fontFamily);
+  color: white;
+  top: 5%;
+  right: 20px;
+  opacity: 0.15;
+}
+
+.single-choosing-reason-item.right .reason-number {
+  right: auto;
+  left: 20px;
+  top: 25%;
+}
+
+.single-choosing-reason-item.dark {
+  background: black;
+}
+.choosing-content-wrapper > .choosing-icon {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.choosing-content-wrapper > .choosing-text h5 {
+  font-size: 18px;
+  line-height: 42px;
+  font-family: var(--fontFamily);
+}
+
+.choosing-content-wrapper > .choosing-text p {
+  line-height: 24px;
+}
+/* -------------------------Why Choose Us Section CSS End --------------------- */
