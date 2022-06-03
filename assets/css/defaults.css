@@ -262,3 +262,26 @@ a {
 .section-padding {
   padding: var(--sectionPadding);
 }
+.section-title {
+  text-align: center;
+}
+
+.section-title .sub-text {
+  font-size: 16px;
+  line-height: 42px;
+  color: #999999;
+}
+
+.section-title .title {
+  font-size: 48px;
+  line-height: 60px;
+  color: var(--textColor);
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+.section-title.dark .sub-text,
+.section-title.dark .title {
+  color: white;
+}

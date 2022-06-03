@@ -240,7 +240,7 @@
 }
 
 .service-items-wrapper .single-service-item .service-text h3 {
-  font-size: 24px;
+  font-size: 23px;
   color: white;
   line-height: 23px;
   margin-bottom: 20px;
@@ -283,3 +283,93 @@
   background: black;
 }
 /* -------------------------Service Section CSS End --------------------- */
+
+/* -------------------------Find Domain Section CSS STart --------------------- */
+.find-domain-area {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 99;
+}
+
+.find-domain-area:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000f2;
+  z-index: -1;
+}
+.find-domain-text-wrapper .domain-types {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.find-domain-text-wrapper .domain-types .type h5 {
+  font-size: 18px;
+  font-weight: 80;
+  font-family: var(--fontFamily);
+}
+
+.find-domain-text-wrapper .domain-types .type p {
+  font-size: 16px;
+}
+
+.find-domain-text-wrapper .domain-types .type p span {
+  font-size: 12px;
+}
+.domain-search-bar-area .search-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  padding-left: 30px;
+  color: var(--textColor2);
+}
+
+.domain-search-bar-area .search-form .domain-list {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+}
+
+.domain-search-bar-area .search-form {
+  position: relative;
+  border: 10px solid var(--bgColor);
+  margin-bottom: 50px;
+}
+
+.domain-search-bar-area .search-form .domain-list select {
+  border: none;
+  color: white;
+  margin: 0;
+  padding: 14px 25px;
+  outline: none;
+  border-radius: 0;
+  background: url("https://api.iconify.design/dashicons/arrow-down-alt2.svg?color=white") no-repeat right
+    black;
+  -webkit-appearance: none;
+  background-position: 65px 20px;
+  padding-right: 40px;
+}
+
+.domain-search-bar-area .search-form .domain-list select option {
+  background: white;
+  color: var(--bgColor);
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.find-domain-text-wrapper .search-button {
+  text-align: center;
+}
+
+/* -------------------------Find Domain Section CSS End --------------------- */
