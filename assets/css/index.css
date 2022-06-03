@@ -74,9 +74,147 @@
 .header-top-area .header-contact .contact-links a span {
   padding-left: 7px;
 }
+.header-bottom-right-area {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
 
+.header-bottom-right-area .header-menu ul {
+  display: flex;
+  gap: 35px;
+}
+
+.header-bottom-area {
+  background-color: var(--bgColor2);
+}
+
+.header-bottom-right-area .header-menu ul li a {
+  font-size: 16px;
+  padding: 25px 0;
+  display: inline-block;
+  transition: 0.3s;
+  position: relative;
+}
+
+.header-bottom-right-area .header-menu ul li:hover a,
+.header-bottom-right-area .header-menu ul li.active a,
+.header-bottom-right-area .header-menu ul li:active a {
+  color: var(--bgColor);
+}
+.header-bottom-right-area .header-menu ul li:hover a:after,
+.header-bottom-right-area .header-menu ul li.active a:after,
+.header-bottom-right-area .header-menu ul li:active a::after {
+  background: var(--bgColor);
+}
+
+.header-bottom-right-area .header-menu ul li a:after {
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: 3px;
+  background: transparent;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.header-bottom-right-area .header-account-cart {
+  display: flex;
+  align-items: center;
+}
+
+.header-bottom-right-area .header-account-cart .header-cart {
+  padding-left: 30px;
+  font-size: 18px;
+  color: black;
+}
+
+.header-bottom-right-area .header-account-cart .header-account-icon {
+  font-size: 24px;
+  width: 65px;
+  height: 65px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  margin-bottom: -70px;
+  z-index: 99;
+}
+
+.header-bottom-right-area .header-account-cart .header-account-icon .icon {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: var(--bgColor);
+  color: white;
+  border-radius: 50%;
+  margin: auto;
+  left: 1px;
+  right: 0;
+  top: 1px;
+  bottom: 0;
+  line-height: 47px;
+}
+
+.header-bottom-right-area .header-account-cart .header-account-icon:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 25px;
+  background: rgb(220, 220, 220);
+  top: -33px;
+}
+.hero-slider-wrapper.owl-carousel .owl-nav button {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 100px;
+  text-align: center;
+  background: var(--bgColor);
+  color: white;
+  margin-top: -50px;
+  font-size: 30px;
+}
+
+.hero-slider-wrapper.owl-carousel {
+  position: relative;
+}
+
+.hero-slider-wrapper.owl-carousel .owl-nav button.owl-next {
+  left: auto;
+  right: 0;
+}
 /* ------------------------- Header Section CSS End --------------------- */
 
 /* -------------------------Hero Section CSS Start --------------------- */
+.single-hero-slide {
+  background-color: #f2f2f2;
+}
+.hero-heigth {
+  height: 520px;
+}
+.hero-images img {
+  width: 100%;
+}
+
+.hero-text-wrapper .title {
+  font-size: 48px;
+  line-height: 72px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.hero-text-wrapper .sub-text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  color: var(--textColor2);
+}
+
+.hero-text-wrapper {
+  padding-right: 30px;
+}
 
 /* -------------------------Hero Section CSS End --------------------- */
