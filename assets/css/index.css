@@ -10,6 +10,10 @@
     1. Home
         01. Header Section
         02. Hero Section
+        03. Service Section
+        04. Find Domain Section
+        05. Domain Feature Section
+        06. Pricing Section
         10. Footer Section
 */
 
@@ -371,5 +375,52 @@
 .find-domain-text-wrapper .search-button {
   text-align: center;
 }
+.find-domain-area .section-title .title {
+  font-size: 36px;
+}
+.find-domain-text-wrapper .search-button .btn:hover {
+  background: var(--bgColor);
+  color: white;
+}
 
 /* -------------------------Find Domain Section CSS End --------------------- */
+
+/* -------------------------Domain Feature Section CSS Start --------------------- */
+.single-feature-item {
+  margin-bottom: 35px;
+}
+
+.single-feature-item .feature-icon {
+  font-size: 30px;
+  color: var(--bgColor);
+  padding-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.single-feature-item .feature-icon:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: var(--bgColor);
+  width: 200%;
+  bottom: 0;
+  left: 0;
+}
+
+.single-feature-item .feature-text h5 {
+  font-size: 18px;
+  line-height: 42px;
+  color: var(--textColor);
+}
+
+.single-feature-item .feature-text p {
+  line-height: 24px;
+  color: #444444;
+}
+
+.domain-feature-area {
+  padding-bottom: 60px;
+}
+/* -------------------------Domain Feature Section CSS End --------------------- */
