@@ -424,3 +424,123 @@
   padding-bottom: 60px;
 }
 /* -------------------------Domain Feature Section CSS End --------------------- */
+
+/* -------------------------Priceing Section CSS Start --------------------- */
+.pricing-area {
+  background: var(--sectionBg);
+}
+
+.single-pricing-plan-item {
+  box-shadow: 0.5px 0.866px 10px 0px rgb(0 0 0 / 12%);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.single-pricing-plan-item .priceing-short-info {
+  background: black;
+  color: white;
+  padding: 25px 0;
+  padding-bottom: 40px;
+  border-radius: 4px 4px 0px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.single-pricing-plan-item .priceing-details {
+  background: white;
+  padding: 25px 0;
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 60px;
+  position: relative;
+}
+
+.single-pricing-plan-item .priceing-short-info > .info-text .title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 42px;
+  font-family: var(--fontFamily);
+}
+
+.single-pricing-plan-item .priceing-short-info > .info-text p {
+  font-size: 14px;
+  line-height: 30px;
+  font-style: italic;
+}
+
+.single-pricing-plan-item .priceing-short-info > .info-text .price {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: var(--fontFamily);
+}
+
+.single-pricing-plan-item .priceing-details > .info-text .price span {
+  font-size: 18px;
+}
+
+.single-pricing-plan-item .priceing-details .priceing-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  left: 50%;
+  top: -50px;
+  margin-left: -50px;
+  background: black;
+  font-size: 30px;
+  color: white;
+}
+
+.single-pricing-plan-item .priceing-details .priceing-icon .icon {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  border-bottom: 1px solid white;
+  border-radius: 50%;
+  left: 8px;
+  top: 8px;
+  line-height: 90px;
+}
+
+.single-pricing-plan-item .priceing-details > .package-details ul li {
+  font-size: 16px;
+  color: #999999;
+  line-height: 35px;
+}
+
+.single-pricing-plan-item .priceing-details > .package-details {
+  margin-bottom: 20px;
+}
+.single-pricing-plan-item .priceing-details > .package-details ul li span {
+  color: var(--bgColor);
+  padding-right: 8px;
+}
+
+.single-pricing-plan-item .priceing-details > .package-details ul li.not span {
+  color: gray;
+}
+.single-pricing-plan-item.recommanded .priceing-short-info:after {
+  content: "Recommanded";
+  position: absolute;
+  top: 15%;
+  left: -35%;
+  background: white;
+  color: var(--bgColor);
+  padding: 5px 10px;
+  width: 100%;
+  font-family: var(--fontFamily);
+  transform: rotate(-40deg);
+}
+
+.single-pricing-plan-item.recommanded .priceing-short-info {
+  background: var(--bgColor);
+}
+
+.single-pricing-plan-item.recommanded .priceing-details .priceing-icon {
+  background: var(--bgColor);
+}
+
+.recommanded .order-btn .btn {
+  background: black;
+}
+/* -------------------------Priceing Section CSS End --------------------- */
