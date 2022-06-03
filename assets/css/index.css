@@ -129,7 +129,8 @@
   color: black;
 }
 
-.header-bottom-right-area .header-account-cart .header-account-icon {
+.header-bottom-right-area .header-account-cart .header-account-icon,
+.single-service-item .service-icon {
   font-size: 24px;
   width: 65px;
   height: 65px;
@@ -142,7 +143,8 @@
   z-index: 99;
 }
 
-.header-bottom-right-area .header-account-cart .header-account-icon .icon {
+.header-bottom-right-area .header-account-cart .header-account-icon .icon,
+.single-service-item .service-icon .icon {
   position: absolute;
   width: 80%;
   height: 80%;
@@ -218,3 +220,66 @@
 }
 
 /* -------------------------Hero Section CSS End --------------------- */
+
+/* -------------------------Service Section CSS Start --------------------- */
+.service-area {
+  background-color: var(--bgColor);
+}
+.single-service-item .service-icon {
+  margin: 0;
+  margin-top: -50px;
+  margin-bottom: 25px;
+}
+.service-items-wrapper {
+  display: flex;
+}
+
+.service-items-wrapper .single-service-item {
+  padding: 20px;
+  transition: 0.6s;
+}
+
+.service-items-wrapper .single-service-item .service-text h3 {
+  font-size: 24px;
+  color: white;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+.service-items-wrapper .single-service-item .service-text p {
+  color: white;
+}
+
+.service-items-wrapper .single-service-item .btn-link {
+  display: none;
+  font-size: 14px;
+}
+.single-service-item:hover {
+  background: white;
+  margin-top: -40px;
+  position: relative;
+  z-index: 99;
+  bottom: 0;
+}
+
+.single-service-item:hover .btn-link {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.single-service-item:hover .service-text h3 {
+  color: black;
+}
+
+.single-service-item:hover .service-text p {
+  color: var(--textColor2);
+}
+
+.single-service-item:hover .service-icon {
+  border-color: var(--bgColor);
+}
+
+.single-service-item:hover .service-icon .icon {
+  background: black;
+}
+/* -------------------------Service Section CSS End --------------------- */

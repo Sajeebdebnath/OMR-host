@@ -4,6 +4,7 @@ $(document).ready(function () {
     nav: true,
     autoPlay: true,
     items: 1,
+    dots: false,
     navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
   })
 })
