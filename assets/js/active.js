@@ -1,3 +1,10 @@
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+//Hero Slider
 $(document).ready(function () {
   $(".hero-slider-wrapper").owlCarousel({
     loop: true,
