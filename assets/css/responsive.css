@@ -1,5 +1,55 @@
 /* Mobile Menu */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
+  .header-bottom-area {
+    padding: 20px 0;
+  }
+  .header-menu {
+    position: fixed;
+    left: -1000%;
+    top: 250px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 99;
+    height: 100%;
+    padding: 25px;
+  }
+  .sticky .header-menu {
+    top: 115px;
+  }
+
+  .header-menu.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .header-bottom-right-area .header-menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .header-bottom-right-area .header-menu ul li a {
+    padding: 0;
+  }
+  .header-bottom-right-area .header-menu ul li a:after {
+    width: 0;
+  }
 }
 
 /* Normal desktop :1200px. */
@@ -17,6 +67,12 @@
   }
   .omrHost-overview-text-wrapper .overview-item:before {
     width: 0;
+  }
+  .header-bottom-right-area .header-menu ul {
+    gap: 28px;
+  }
+  .header-menu {
+    top: 200px;
   }
 }
 
@@ -94,6 +150,12 @@
 
   .footer-menu-area {
     margin-bottom: 40px;
+  }
+  .header-menu {
+    top: 200px;
+  }
+  .sticky .header-menu {
+    top: 70px;
   }
 }
 
@@ -208,6 +270,28 @@
 
   .footer-menu-area {
     margin-bottom: 40px;
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .header-bottom-right-area {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .header-bottom-right-area .header-account-cart .header-account-icon {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .header-bottom-right-area .header-account-cart .header-account-icon:after {
+    width: 0;
+  }
+  .header-bottom-right-area .header-account-cart .header-account-icon .icon {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 
