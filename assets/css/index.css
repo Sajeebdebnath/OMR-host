@@ -14,10 +14,14 @@
         04. Find Domain Section
         05. Domain Feature Section
         06. Pricing Section
-        10. Footer Section
+        07. OMRhost Overview Section
+        08. Our Offer Section
+        09. Why Choose Us Section
+        10. Testimonial Section
+        11. Footer Section
 */
 
-/* ------------------------- Home Start --------------------- */
+/* ------------------------- Home Page Start --------------------- */
 /* ------------------------- Header Section CSS Start --------------------- */
 .header-top-area {
   background-color: var(--bgColor3);
@@ -632,6 +636,150 @@
 }
 /* -------------------------omrHost Overview Section CSS End --------------------- */
 
+/* -------------------------Our offer Section CSS Start --------------------- */
+.our-offer-area {
+  background-color: var(--sectionBg);
+}
+.offer-category-wrapper .nav-tabs {
+  border: none;
+}
+.single-offer-item {
+  display: none;
+}
+
+.single-offer-item.active {
+  display: block;
+}
+.tooltip-inner {
+  background-color: var(--bgColor);
+  opacity: 1 !important;
+  border-radius: 0;
+}
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: var(--bgColor) !important;
+}
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: var(--bgColor) !important;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: var(--bgColor) !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--bgColor) !important;
+}
+.offer-category-wrapper ul .offer-category-item {
+  background: white;
+  width: 120px;
+  height: 80px;
+  display: inline-block;
+  border: 0.5px solid rgb(238, 238, 238);
+  border-left-width: 0;
+  text-align: center;
+  line-height: 80px;
+  position: relative;
+}
+
+.offer-category-wrapper ul {
+  display: flex;
+}
+
+.offer-category-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.offer-category-wrapper ul li:nth-child(1) .offer-category-item {
+  border-left-width: 1px;
+}
+
+.offer-category-wrapper ul .offer-category-item .category-icon {
+  font-size: 30px;
+  color: #999999;
+  transition: 0.3s;
+}
+
+.offer-category-wrapper ul li:hover .category-icon,
+.offer-category-wrapper ul li .offer-category-item.active .category-icon {
+  color: var(--bgColor);
+}
+
+.offer-category-wrapper ul .offer-category-item:after {
+  content: "";
+  background: var(--bgColor);
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+
+.offer-category-wrapper ul .offer-category-item:before {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--bgColor) transparent transparent transparent;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  visibility: hidden;
+}
+.offer-category-wrapper ul li:hover .offer-category-item:before,
+.offer-category-wrapper ul li .offer-category-item.active:before,
+.offer-category-wrapper ul li .offer-category-item.active:after,
+.offer-category-wrapper ul li:hover .offer-category-item:after {
+  visibility: visible;
+}
+.offer-items-wrapper {
+  background: white;
+  padding: 60px 0;
+  box-shadow: 0.5px 0.866px 20px 0px rgb(0 0 0 / 6%);
+}
+
+.offer-items-wrapper .single-offer-text .title {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.offer-items-wrapper .single-offer-text > .details {
+  margin: 15px 0;
+  color: var(--textColor2);
+  line-height: 28px;
+}
+
+.offer-items-wrapper .single-offer-text > .details blockquote {
+  padding-left: 20px;
+  font-style: italic;
+  color: #999999;
+  position: relative;
+}
+
+.offer-items-wrapper .single-offer-text > .details blockquote:after {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 2px;
+  background: rgb(238, 238, 238);
+  top: 7px;
+  left: 0;
+}
+
+.offer-items-wrapper .single-offer-text .btn-link {
+  color: black;
+}
+
+.offer-items-wrapper .single-offer-text .btn-link:hover {
+  color: var(--bgColor);
+}
+
+.single-offer-image img {
+  width: 100%;
+  height: 320px;
+}
+/* -------------------------Our offer Section CSS End --------------------- */
+
 /* -------------------------Why Choose Us Section CSS Start --------------------- */
 .single-choosing-reason-item {
   background: var(--bgColor);
@@ -934,3 +1082,5 @@
   margin-bottom: 10px;
 }
 /* -------------------------Footer Section CSS End --------------------- */
+
+/* ------------------------- Home Page End --------------------- */
