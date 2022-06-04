@@ -1,3 +1,4 @@
+//Mobile Menu Script
 const hamburger = document.querySelector(".hamburger")
 const navMenu = document.querySelector(".header-menu")
 
@@ -8,7 +9,7 @@ function mobileMenu() {
   navMenu.classList.toggle("active")
 }
 
-//Sticky Navigation
+//Sticky Navigation Script
 window.onscroll = function () {
   stickyNavigation()
 }
@@ -24,13 +25,13 @@ function stickyNavigation() {
   }
 }
 
-// Initialize tooltips
+// Initialize tooltips Script
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-//Hero Slider
+//Hero Slider Script
 $(document).ready(function () {
   $(".hero-slider-wrapper").owlCarousel({
     loop: true,
@@ -41,7 +42,7 @@ $(document).ready(function () {
     navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
   })
 
-  //Testimonial Slider
+  //Testimonial Slider Script
   $(".testonial-items-wrapper").owlCarousel({
     loop: true,
     margin: 30,
