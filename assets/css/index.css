@@ -98,6 +98,15 @@
 .header-bottom-area {
   background-color: var(--bgColor2);
 }
+.header-bottom-area.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--bgColor2);
+  z-index: 9999999999999999999;
+  box-shadow: 4px 2px 7px 0px #80808078;
+}
 
 .header-bottom-right-area .header-menu ul li a {
   font-size: 16px;

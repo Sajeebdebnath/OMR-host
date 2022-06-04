@@ -1,3 +1,19 @@
+//Sticky Navigation
+window.onscroll = function () {
+  stickyNavigation()
+}
+
+var navbar = document.querySelector(".header-bottom-area")
+var sticky = navbar.offsetTop
+
+function stickyNavigation() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky")
+  }
+}
+
 // Initialize tooltips
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
