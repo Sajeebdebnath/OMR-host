@@ -7,28 +7,27 @@ $(document).ready(function () {
     dots: false,
     navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
   })
-})
 
-// $(document).ready(function () {
-//     $(".hero-slider-wrapper").owlCarousel({
-//       loop: true,
-//       margin: 60,
-//       responsiveClass: true,
-//       nav: true,
-//       autoPlay: true,
-//       items: 1,
-//       dotsEach: true,
-//       navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
-//       responsive: {
-//         0: {
-//           items: 1,
-//         },
-//         600: {
-//           items: 1,
-//         },
-//         1000: {
-//           items: 2,
-//         },
-//       },
-//     })
-//   })
+  //Testimonial Slider
+  $(".testonial-items-wrapper").owlCarousel({
+    loop: true,
+    margin: 30,
+    responsiveClass: true,
+    nav: true,
+    autoPlay: true,
+    items: 3,
+    dots: false,
+    navText: ["<i class='fa-solid fa-arrow-left-long'></i>", "<i class='fa-solid fa-arrow-right-long'></i>"],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  })
+})

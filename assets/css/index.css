@@ -684,6 +684,146 @@
 }
 /* -------------------------Why Choose Us Section CSS End --------------------- */
 
+/* -------------------------Testinmonial Section CSS Start --------------------- */
+.testimonial-area {
+  background: var(--sectionBg);
+  padding-bottom: 0;
+}
+
+.testonial-items-wrapper {
+  margin-bottom: 100px;
+}
+.single-testimonial-item .testimonial-title-review {
+  position: relative;
+}
+
+.single-testimonial-item .testimonial-title-review > h3 {
+  font-size: 24px;
+  line-height: 42px;
+  color: var(--textColor);
+}
+
+.single-testimonial-item .testimonial-title-review > .rating {
+  font-size: 18px;
+  line-height: 35px;
+  color: #dddddd;
+  margin: 5px 0;
+}
+
+.single-testimonial-item .testimonial-title-review:after {
+  content: "\f10d";
+  font-family: "FontAwesome";
+  font-size: 48px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: #dddddd;
+  z-index: -2;
+}
+
+.single-testimonial-item .testimonial-text blockquote {
+  font-size: 14px;
+  color: var(--textColor2);
+  padding-left: 12px;
+  line-height: 24px;
+  text-align: justify;
+  position: relative;
+}
+
+.single-testimonial-item .testimonial-text blockquote:after {
+  content: "";
+  position: absolute;
+  height: 92%;
+  width: 2px;
+  background: var(--bgColor);
+  left: 0;
+  top: 7px;
+}
+.single-testimonial-item .reviewer-profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.single-testimonial-item .reviewer-profile .profile-bg {
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.single-testimonial-item .reviewer-profile > .reviewer-name h5 {
+  font-family: var(--fontFamily);
+  font-size: 16px;
+  color: var(--textColor);
+}
+
+.single-testimonial-item .reviewer-profile > .reviewer-name p {
+  color: var(--textColor2);
+  line-height: 24px;
+}
+.testonial-items-wrapper .owl-nav {
+  position: absolute;
+  left: 50%;
+  bottom: -70px;
+  display: flex;
+  gap: 25px;
+  margin-left: -40px;
+  font-size: 24px;
+}
+
+.testonial-items-wrapper .owl-nav .owl-prev {
+  position: relative;
+}
+
+.testonial-items-wrapper .owl-nav:after {
+  content: "/";
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  font-size: 30px;
+  margin-left: -3px;
+  z-index: -99;
+}
+
+.testonial-items-wrapper .owl-nav button:hover {
+  color: var(--bgColor);
+}
+
+.contact-ways-wrapper {
+  background: var(--bgColor);
+  padding: 40px 0;
+  margin-top: 30px;
+}
+
+.contact-ways-wrapper .contact-ways-text {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+.contact-ways-wrapper .contact-ways-text .icon {
+  font-size: 36px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-ways-wrapper .contact-ways-text > .text h2 {
+  color: white;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.contact-ways-wrapper .contact-ways-text > .text p {
+  color: white;
+  line-height: 30px;
+}
+/* -------------------------Testinmonial Section CSS End --------------------- */
+
 /* -------------------------Footer Section CSS Start --------------------- */
 .footer-area {
   background: #151414;
