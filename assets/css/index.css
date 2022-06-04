@@ -34,12 +34,14 @@
   color: var(--bgColor);
 }
 
-.header-top-area .header-social-link {
+.header-top-area .header-social-link,
+.footer-menu .header-social-link {
   display: flex;
   gap: 20px;
 }
 
-.header-top-area .header-social-link .links {
+.header-top-area .header-social-link .links,
+.footer-menu .header-social-link .links {
   display: flex;
   gap: 15px;
 }
@@ -681,3 +683,114 @@
   line-height: 24px;
 }
 /* -------------------------Why Choose Us Section CSS End --------------------- */
+
+/* -------------------------Footer Section CSS Start --------------------- */
+.footer-area {
+  background: #151414;
+  color: white;
+}
+
+.footer-bottom-area {
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid rgb(85, 85, 85);
+}
+
+.footer-bottom-area .copy-right-text a,
+.footer-bottom-area .copy-right-text .love {
+  color: var(--bgColor);
+}
+
+.footer-bottom-area .copy-right-text {
+  color: #999999;
+}
+.footer-top-area {
+  padding: 70px 0;
+}
+
+.footer-menu-area .footer-title {
+  margin-bottom: 25px;
+}
+
+.footer-menu-area .footer-title > h5 {
+  font-size: 18px;
+  font-family: var(--fontFamily);
+  color: white;
+}
+
+.footer-menu-area .footer-menu ul li,
+.footer-menu-area .footer-menu ul li a {
+  color: #999999;
+}
+
+.footer-menu-area .footer-menu ul li {
+  line-height: 30px;
+}
+
+.footer-menu-area .footer-menu.menu ul li a {
+  position: relative;
+  padding-left: 23px;
+}
+
+.footer-menu-area .footer-menu.menu ul li a::after {
+  content: "\f0a4";
+  font-family: "FontAwesome";
+  left: 0;
+  position: absolute;
+  top: -5px;
+  font-size: 14px;
+}
+
+.footer-menu-area .footer-menu.menu ul li:hover a::after,
+.footer-menu-area .footer-menu.menu ul li:hover a {
+  color: var(--bgColor);
+}
+.footer-menu .header-social-link .links {
+  gap: 10px;
+}
+.footer-menu .header-social-link .links a:hover {
+  color: var(--bgColor);
+}
+.footer-menu-area .footer-menu ul li.about {
+  line-height: 24px;
+}
+
+.footer-menu-area .footer-menu ul li .learn-more {
+  font-size: 14px;
+  color: #cccccc;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+.footer-menu-area .footer-menu ul li:hover .learn-more {
+  color: var(--bgColor);
+}
+.footer-menu .newsletter-form input[type="email"] {
+  width: 100%;
+  border: none;
+  padding: 7px 15px;
+  padding-left: 20px;
+  outline: none;
+  padding-right: 100px;
+}
+
+.footer-menu .newsletter-form {
+  position: relative;
+  margin: 15px 0;
+}
+
+.footer-menu .newsletter-form input[type="submit"] {
+  position: absolute;
+  right: 2px;
+  border: none;
+  background: var(--bgColor);
+  color: white;
+  top: 2px;
+  padding: 5px 13px;
+  font-family: var(--fontFamily);
+}
+
+.footer-menu-area .footer-menu ul li .we-accept {
+  font-family: var(--fontFamily);
+  margin-bottom: 10px;
+}
+/* -------------------------Footer Section CSS End --------------------- */
