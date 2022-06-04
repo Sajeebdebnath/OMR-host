@@ -4,18 +4,211 @@
 
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
+  .service-items-wrapper .single-service-item .service-text h3 {
+    font-size: 22px;
+  }
 }
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
+  .service-items-wrapper .single-service-item .service-text h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .omrHost-overview-text-wrapper .overview-item:before {
+    width: 0;
+  }
 }
 
 /*  MD Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+  .header-top-area .header-social-link,
+  .footer-menu .header-social-link,
+  .header-top-area .header-contact {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .hero-heigth {
+    height: auto;
+  }
+  .hero-images {
+    margin: 50px 0;
+  }
+  .hero-text-wrapper .title {
+    font-size: 35px;
+    line-height: 60px;
+    margin: 20px 0;
+  }
+  .service-items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-items-wrapper .single-service-item {
+    margin-bottom: 50px;
+  }
+  .single-pricing-plan-item {
+    margin-bottom: 35px;
+  }
+  .omrHost-overview-text-wrapper .overview-item > h4 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .omrHost-overview-text-wrapper .overview-item > h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .omrHost-overview-text-wrapper .overview-item:before {
+    width: 0;
+  }
+  .offer-items-wrapper {
+    padding: 60px;
+  }
+  .single-offer-image {
+    margin-top: 30px;
+  }
+  .single-offer-image img {
+    height: auto;
+  }
+  .single-choosing-reason-item.right {
+    height: 285px;
+    text-align: left;
+  }
+  .single-choosing-reason-item.right .reason-number {
+    top: 5%;
+    right: 20px;
+    left: auto;
+  }
+  .contact-ways-wrapper .contact-ways-text {
+    gap: 15px;
+  }
+  .contact-ways-wrapper .contact-ways-text > .text h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contact-ways-wrapper .contact-ways-text > .text p {
+    font-size: 10px;
+  }
+  .footer-menu .header-social-link {
+    justify-content: start;
+  }
+
+  .footer-menu-area {
+    margin-bottom: 40px;
+  }
 }
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
+  .header-top-area .header-social-link,
+  .footer-menu .header-social-link,
+  .header-top-area .header-contact {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .hero-heigth {
+    height: auto;
+  }
+  .hero-images {
+    margin: 50px 0;
+  }
+  .hero-text-wrapper .title {
+    font-size: 35px;
+    line-height: 60px;
+    margin: 20px 0;
+  }
+  .hero-slider-wrapper.owl-carousel .owl-nav button {
+    top: 60%;
+    height: 50px;
+    font-size: 20px;
+  }
+  .service-items-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .service-items-wrapper .single-service-item {
+    text-align: center;
+  }
+  .single-service-item .service-icon {
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 25px;
+  }
+  .service-items-wrapper .single-service-item .service-text p {
+    padding: 0 30px;
+  }
+  .find-domain-area .section-title .title,
+  .section-title .title {
+    font-size: 28px;
+  }
+  .find-domain-text-wrapper .domain-types .type p {
+    font-size: 12px;
+  }
+  .single-feature-item {
+    text-align: center;
+  }
+  .single-feature-item .feature-icon:after {
+    left: -15px;
+  }
+  .single-pricing-plan-item {
+    margin-bottom: 35px;
+  }
+  .omrHost-overview-text-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .omrHost-overview-text-wrapper .overview-item:before {
+    width: 0;
+  }
+  .omrHost-overview-text-wrapper .overview-item:after {
+    left: 50%;
+    margin-left: -31px;
+  }
+  .offer-items-wrapper {
+    padding: 30px;
+  }
+  .single-offer-image {
+    margin-top: 30px;
+  }
+  .single-offer-image img {
+    height: auto;
+  }
+  .offer-category-wrapper {
+    margin-bottom: 40px;
+  }
+  .offer-category-wrapper ul .offer-category-item {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .offer-category-wrapper ul .offer-category-item .category-icon {
+    font-size: 20px;
+  }
+  .single-choosing-reason-item.right {
+    height: 285px;
+    text-align: left;
+  }
+  .single-choosing-reason-item.right .reason-number {
+    top: 5%;
+    right: 20px;
+    left: auto;
+  }
+  .contact-ways-wrapper .contact-ways-text {
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .single-testimonial-item {
+    padding: 0 15px;
+  }
+  .footer-menu .header-social-link {
+    justify-content: start;
+  }
+
+  .footer-menu-area {
+    margin-bottom: 40px;
+  }
 }
 
 /* Large Mobile :480px. */
