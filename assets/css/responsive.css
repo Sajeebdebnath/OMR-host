@@ -174,12 +174,12 @@
     margin: 50px 0;
   }
   .hero-text-wrapper .title {
-    font-size: 35px;
-    line-height: 60px;
+    font-size: 28px;
+    line-height: 40px;
     margin: 20px 0;
   }
   .hero-slider-wrapper.owl-carousel .owl-nav button {
-    top: 60%;
+    top: 75%;
     height: 50px;
     font-size: 20px;
   }
@@ -292,6 +292,15 @@
   .header-bottom-right-area .header-account-cart .header-account-icon .icon {
     font-size: 16px;
     line-height: 28px;
+  }
+  .header-top-area .header-contact .contact-links a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .header-top-area .header-contact .contact-links a:after {
+    width: 0;
   }
 }
 
